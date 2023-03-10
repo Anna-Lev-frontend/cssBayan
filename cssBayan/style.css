@@ -1,0 +1,12 @@
+.wrapper {
+    margin: 0 auto;
+    background-color: rgb(144, 141, 141);
+    width: 80vw;
+    height: 100vh;
+}
+h1 {
+    color:blue;
+}
+h2 {
+    color: red;
+}
