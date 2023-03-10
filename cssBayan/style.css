@@ -1,12 +1,43 @@
 .wrapper {
     margin: 0 auto;
     background-color: rgb(144, 141, 141);
-    width: 80vw;
-    height: 100vh;
 }
 h1 {
-    color:blue;
+    padding: 5%;
+    margin: 0;
 }
 h2 {
-    color: red;
+    padding-left: 5%;
+}
+img {
+    width: 15em;
+    height: 10em;
+}
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+}
+.github {
+    width: 3em;
+    height: 3em;
+}
+.image {
+    display: flex;
+    justify-content: center;
+}
+.cross {
+    background-image: url('./image/icon-ok.svg');
+    width: 35px;
+    height: 35px;
+}
+.section__content {
+    display: flex;
+    justify-content: space-between;
+}
+.main__section {
+    border-top: 1px gray solid;
+}
+header, main, footer {
+    padding: 0 30px;
 }
