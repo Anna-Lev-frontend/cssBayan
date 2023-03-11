@@ -58,13 +58,13 @@ header, main, footer {
     display: block;
     padding-bottom: 20px;
     cursor: pointer;
-  
+
 }
 .image-content .image-content__radio {
 display: none;
 }
 .main__section:hover .cross, .main__section:active .cross {
-    background-image: url("./image/check-solid.svg");
+    background-image: url("./image/xmark-solid.svg");
     display: block;
     display: flex;
     justify-content: center;
@@ -77,10 +77,20 @@ main:hover h2 {
     cursor: pointer;
 }
 main:hover .cross{
-    background-image: url("./image/xmark-solid.svg");
+    background-image: url("./image/plus-solid.svg");
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
     cursor: pointer;
     
+}
+.main__section:focus h2{
+    color: black;
+}
+.main__section:focus .cross{
+    background-image: url("./image/xmark-solid.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
