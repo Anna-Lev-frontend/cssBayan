@@ -1,36 +1,45 @@
-.wrapper {
+html {
+    font-size: 14px;
+}
+body {
+    display: block;
     margin: 0 auto;
+}
+.wrapper {
     background-color: rgb(144, 141, 141);
+    max-width: 1920px;
+    width: 100%;
 }
 h1 {
-    padding: 5%;
+    padding-left: 5%;
     margin: 0;
+    font-size: 2.85rem;
 }
 h2 {
     padding-left: 5%;
+    font-size: 1.42rem;
+    color: blue;
 }
 img {
-    width: 15em;
-    height: 10em;
+    width: 20em;
+    height: 15em;
 }
 .footer {
     display: flex;
     justify-content: flex-end;
-    padding: 1%;
 }
 .github {
     width: 3em;
     height: 3em;
 }
-.image {
-    display: flex;
-    justify-content: center;
+.image-content__image { 
+    display: none;
 }
-.cross {
-    background-image: url('./image/icon-ok.svg');
-    width: 35px;
-    height: 35px;
-}
+/* .cross {
+    background-image: url("./image/check-solid.svg");
+    width: 30px;
+    height: 30px;
+} */
 .section__content {
     display: flex;
     justify-content: space-between;
@@ -39,5 +48,39 @@ img {
     border-top: 1px gray solid;
 }
 header, main, footer {
-    padding: 0 30px;
+    padding: 50px 100px 20px;
+}
+.image-content {
+    display: flex;
+    justify-content: center;
+}
+.main__section:hover .image-content__image, .image-content .image-content__radio:checked + .image-content__image {
+    display: block;
+    padding-bottom: 20px;
+    cursor: pointer;
+  
+}
+.image-content .image-content__radio {
+display: none;
+}
+.main__section:hover .cross, .main__section:active .cross {
+    background-image: url("./image/check-solid.svg");
+    display: block;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    cursor: pointer;
+  
+}
+main:hover h2 {
+    color: black;
+    cursor: pointer;
+}
+main:hover .cross{
+    background-image: url("./image/xmark-solid.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    
 }
