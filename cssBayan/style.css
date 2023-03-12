@@ -1,17 +1,17 @@
 * {
     box-sizing: border-box;
+    background-color: rgb(238, 238, 118);
 }
 html {
     font-size: 14px;
 }
 body {
-    display: block;
-     margin: 0 auto;
+    display: block;  
 }
 .wrapper {
-    background-color: rgb(238, 238, 118);
-    max-width: 1920px;
-    width: 100%;
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
 }
 h1 {
     margin: 0;
